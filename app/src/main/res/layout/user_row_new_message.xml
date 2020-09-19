@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools" android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+    <TextView
+            android:text="Username"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/username_text_row_new_message" app:layout_constraintStart_toEndOf="@+id/image_view_row_new_message"
+            android:layout_marginStart="16dp"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            app:layout_constraintTop_toTopOf="@+id/image_view_row_new_message" app:layout_constraintBottom_toBottomOf="@+id/image_view_row_new_message"
+            app:layout_constraintVertical_bias="0.0"
+            android:layout_marginTop="16dp" android:layout_marginBottom="16dp" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="16dp"
+            app:layout_goneMarginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@android:color/black"
+            android:id="@+id/image_view_row_new_message"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@android:drawable/btn_dialog"
+    />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
